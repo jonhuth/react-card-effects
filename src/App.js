@@ -1,5 +1,5 @@
 import React from 'react';
-import './StackOfCards';
+import StackOfCards from './StackOfCards';
 import './App.css';
 
 function App() {

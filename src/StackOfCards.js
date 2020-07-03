@@ -1,8 +1,8 @@
 import React, {useState, useEffect} from 'react';
 import axios from 'axios';
 import Card from './Card';
-import uuid from 'uuid/v4';
-import './Card.css';
+// import uuid from 'uuid/v4';
+// import './Card.css';
 
 function StackOfCards() {
   const BASE_URL = "https://deckofcardsapi.com/api/deck/";
@@ -20,9 +20,9 @@ function StackOfCards() {
 
 
   
-  const addCard = card => {
+  async function addCard() {
     let card = await axios.get(`${BASE_URL}${deckId}/draw/?count=1`);
-    let newCard = {...card.cards[0], id: uuid()};
+    let newCard = {...card.data.cards[0]}; // , id: uuid()
     setCards(cards => [...cards, newCard]);
   }
 
@@ -40,15 +40,11 @@ function StackOfCards() {
   
   return (
     <div>
-      {cards.length === 52 ? null : <button onClick={addCard}>GIMME A CARD!</button>}
+      {cards.length === 52 ? <p>ERROR: NO CARDS REMAIN!</p> : <button onClick={addCard}>GIMME A CARD!</button>}
       {renderCards()}
     </div>
   )
 }
-
-
-
-
 
 
 export default StackOfCards;
