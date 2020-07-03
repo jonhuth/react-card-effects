@@ -1,0 +1,9 @@
+button {
+  margin-top: 10px;
+  border-radius: 10px 10px;
+  font-size: large;
+  font-family: 'Courier New', Courier, monospace;
+  color: red;
+  border-color: transparent;
+  outline: none;
+}

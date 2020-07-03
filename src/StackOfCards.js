@@ -1,8 +1,9 @@
 import React, {useState, useEffect} from 'react';
 import axios from 'axios';
 import Card from './Card';
+import "./StackOfCards.css"
 // import uuid from 'uuid/v4';
-// import './Card.css';
+
 
 function StackOfCards() {
   const BASE_URL = "https://deckofcardsapi.com/api/deck/";
