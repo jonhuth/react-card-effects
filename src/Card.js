@@ -1,5 +1,5 @@
 import React from 'react';
-import './Card.css'
+import './Card.css';
 
 function Card({ cardImgSrc }) {
   let angle = Math.random() * 90 - 45;

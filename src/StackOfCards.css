@@ -1,4 +1,5 @@
 button {
+<<<<<<< HEAD
     margin-top: 10px;
     border-radius: 10px 10px;
     font-size: large;
@@ -7,3 +8,13 @@ button {
     border-color: transparent;
     outline: none;
   }
+=======
+  margin-top: 10px;
+  border-radius: 10px 10px;
+  font-size: large;
+  font-family: 'Courier New', Courier, monospace;
+  color: red;
+  border-color: transparent;
+  outline: none;
+}
+>>>>>>> ccd021fc672d0109748227152e86b208c145b7ac
